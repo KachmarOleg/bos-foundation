@@ -55,17 +55,29 @@ $headings: 4;
 }
 
 h1, .h1 {
-  font-size: 51px;
-  line-height: 1.25;
+  font-size: 85px;
+  font-weight: 500;
+  line-height: 20px;
 }
+
 h2, .h2 {
-  font-size: 28px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 38px;
 }
+
 h3, .h3 {
-  font-size: 21px;
+  font-family: $ff;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 38px;
 }
+
 h4, .h4 {
-  font-size: 18px;
+  font-family: $ff;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 34px;
 }
 h5, .h5 {
   font-size: 16px;

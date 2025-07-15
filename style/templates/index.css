@@ -120,7 +120,7 @@
   top: 100%;
   left: 0;
   background: #f8f8f8;
-  border: 1px solid rgb(195.5, 195.5, 195.5);
+  border: 1px solid #c4c4c4;
   z-index: -1;
   box-shadow: 0 0 10px -6px;
 }
@@ -141,20 +141,20 @@
   transition: all 0.3s ease;
   display: block;
   padding: 10px;
-  color: #0F0801;
+  color: #000000;
   background: #eee;
   cursor: pointer;
 }
 .selectric-items li:active {
-  background: #4F3BD4;
+  background: #132463;
 }
 @media screen and (min-width: 1025px) {
   .selectric-items li:hover {
-    background: #4F3BD4;
+    background: #132463;
   }
 }
 .selectric-items li.selected, .selectric-items li.highlighted {
-  background: #4F3BD4;
+  background: #132463;
 }
 .selectric-items .disabled {
   filter: alpha(opacity=50);

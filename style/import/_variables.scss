@@ -1,11 +1,20 @@
 // fonts
-$fb: 16px;
-$ff: 'Roboto', sans-serif;
+$fb: 18px;
+$ff: 'Inter', sans-serif;
 $ff2: 'Playfair Display', sans-serif;
 $icons: 'icons';
 
 // colors
-$cl: #4F3BD4;
-$tx: #0F0801;
+$blue-primary: #132463;
+$blue-dark: #1F2A44;
+$blue-light: #ADC4CE;
+
+$beige-light: #F3E2CE;
+$brown-medium: #B66B3F;
+$orange-warm: #D4A373;
+$orange-soft: #E8C1A1;
+
+$cl: $blue-primary;
+$tx: #000000;
 $border: rgba($tx, 0.5);
 $shadow: rgba($tx, 0.33);

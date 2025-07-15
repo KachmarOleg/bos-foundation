@@ -46,8 +46,8 @@ header {
 
   &__logo {
     img {
-      width: 40px;
-      @include rwd-min(1025) {width: 60px}
+      width: 50px;
+      @include rwd-min(1025) {width: 70px}
     }
   }
 }
@@ -63,11 +63,14 @@ header {
       right: 0;
       bottom: 0;
       overflow: auto;
-      padding: 35px 24px 0;
+      padding: 35px 39px 0;
       background-color: $cl;
       transform: translateX(101%);
       z-index: 2;
       &.is_open {transform: translateX(0)}
+    }
+    @include rwd-max(479) {
+      padding: 35px 24px 0;
     }
     .logged-in.admin-bar & {
       @include rwd-range(1024, 783) {
