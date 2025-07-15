@@ -373,11 +373,31 @@ h1, .h1 {
   font-size: 64px;
   font-weight: 500;
 }
+@media screen and (max-width: 797px) and (min-width: 480px) {
+  h1, .h1 {
+    font-size: 48px;
+  }
+}
+@media screen and (max-width: 479px) {
+  h1, .h1 {
+    font-size: 38px;
+  }
+}
 
 h2, .h2 {
   font-size: 40px;
   font-weight: 700;
   line-height: 38px;
+}
+@media screen and (max-width: 767px) and (min-width: 480px) {
+  h2, .h2 {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 479px) {
+  h2, .h2 {
+    font-size: 28px;
+  }
 }
 
 h3, .h3 {
@@ -1599,6 +1619,13 @@ footer {
   font-weight: 400;
   line-height: normal;
   color: #ffffff;
+}
+@media screen and (max-width: 767px) {
+  .top_panel__primary .subtitle,
+  .top_panel__secondary .subtitle {
+    padding-top: 16px;
+    margin-top: 16px;
+  }
 }
 .top_panel__primary .subtitle:before,
 .top_panel__secondary .subtitle:before {

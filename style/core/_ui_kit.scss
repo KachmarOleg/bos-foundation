@@ -57,12 +57,24 @@ $headings: 4;
 h1, .h1 {
   font-size: 64px;
   font-weight: 500;
+  @include rwd-range(797, 480) {
+    font-size: 48px;
+  }
+  @include rwd-max(479) {
+    font-size: 38px;
+  }
 }
 
 h2, .h2 {
   font-size: 40px;
   font-weight: 700;
   line-height: 38px;
+  @include rwd-range(767, 480) {
+    font-size: 32px;
+  }
+  @include rwd-max(479) {
+    font-size: 28px;
+  }
 }
 
 h3, .h3 {

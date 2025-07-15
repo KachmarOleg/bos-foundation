@@ -54,6 +54,10 @@
     font-weight: 400;
     line-height: normal;
     color: #ffffff;
+    @include rwd-max(767) {
+      padding-top: 16px;
+      margin-top: 16px;
+    }
 
     &:before {
       content: '';
