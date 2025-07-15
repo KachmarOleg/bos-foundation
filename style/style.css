@@ -239,13 +239,13 @@ a[href]:focus, a[href]:focus-visible, area[href]:focus, area[href]:focus-visible
   transition: all 0.3s ease;
   display: inline-block;
   vertical-align: middle;
-  font: 400 14px/24px "Inter", sans-serif;
+  font: 500 18px/24px "Inter", sans-serif;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #fff;
+  color: #1F2A44;
   padding: 7px 16px;
-  background-color: #000000;
-  border-radius: 0 !important;
+  background-color: #eca764;
+  border-radius: 6px !important;
   cursor: pointer;
   user-select: none;
 }
@@ -265,13 +265,13 @@ a[href]:focus, a[href]:focus-visible, area[href]:focus, area[href]:focus-visible
 .button:active,
 .wp-block-button__link:active,
 .wp-block-file__button:active {
-  background-color: #132463;
+  background-color: #D4A373;
 }
 @media screen and (min-width: 1025px) {
   .button:hover,
   .wp-block-button__link:hover,
   .wp-block-file__button:hover {
-    background-color: #132463;
+    background-color: #D4A373;
   }
 }
 
@@ -370,13 +370,12 @@ h4 a:active, .h4 a:active {
 }
 
 h1, .h1 {
-  font-size: 85px;
+  font-size: 64px;
   font-weight: 500;
-  line-height: 20px;
 }
 
 h2, .h2 {
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 700;
   line-height: 38px;
 }
@@ -1545,11 +1544,17 @@ footer {
   background-color: #000000;
 }
 
+.admin-bar .top_panel__primary {
+  min-height: calc(100vh - 112px);
+}
+
 .top_panel__primary {
   padding: 70px 0;
+  min-height: calc(100vh - 80px);
 }
 .top_panel__secondary {
   padding: 50px 0;
+  min-height: 60vh;
 }
 .top_panel__default {
   padding: 40px 0 30px;
@@ -1567,16 +1572,58 @@ footer {
 .top_panel__secondary {
   display: flex;
   align-items: center;
-  min-height: 290px;
   margin-bottom: 30px;
   position: relative;
 }
-@media screen and (min-width: 768px) {
-  .top_panel__primary,
-  .top_panel__secondary {
-    min-height: 480px;
-    margin-bottom: 50px;
-  }
+.top_panel__primary figure,
+.top_panel__secondary figure {
+  position: relative;
+}
+.top_panel__primary figure:before,
+.top_panel__secondary figure:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(11, 23, 71, 0.65);
+}
+.top_panel__primary .subtitle,
+.top_panel__secondary .subtitle {
+  position: relative;
+  display: inline-block;
+  padding-top: 24px;
+  margin-top: 24px;
+  font-weight: 400;
+  line-height: normal;
+  color: #ffffff;
+}
+.top_panel__primary .subtitle:before,
+.top_panel__secondary .subtitle:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 0;
+  display: block;
+  width: 60%;
+  height: 2px;
+  background: #ffffff;
+}
+.top_panel__primary .text_center,
+.top_panel__secondary .text_center {
+  position: relative;
+  top: -50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.top_panel__primary .button,
+.top_panel__secondary .button {
+  margin-top: 40px;
 }
 .top_panel__primary:before,
 .top_panel__secondary:before {

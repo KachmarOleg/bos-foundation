@@ -6,13 +6,13 @@
   transition: all 0.3s ease;
   display: inline-block;
   vertical-align: middle;
-  font: 400 14px/24px $ff;
+  font: 500 18px/24px $ff;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #fff;
+  color: $blue-dark;
   padding: 7px 16px;
-  background-color: $tx;
-  border-radius: 0 !important;
+  background-color: #eca764;
+  border-radius: 6px !important;
   cursor: pointer;
   user-select: none;
   @include rwd-min(768) {
@@ -20,7 +20,7 @@
     padding: 10px 22px;
   }
   &.is_full {width: 100%}
-  @include hover {background-color: $cl}
+  @include hover {background-color: $orange-warm}
 }
 
 .wp-block-button {
@@ -55,13 +55,12 @@ $headings: 4;
 }
 
 h1, .h1 {
-  font-size: 85px;
+  font-size: 64px;
   font-weight: 500;
-  line-height: 20px;
 }
 
 h2, .h2 {
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 700;
   line-height: 38px;
 }
