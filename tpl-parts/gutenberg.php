@@ -11,7 +11,7 @@ $container_class = $container_class > 0 ? ' ' . $container_class : '';
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post();
 	if ( get_the_content() ) : ?>
         <div class="gutenberg">
-            <div class="container<?php echo $container_class; ?>">
+            <div class="<?php echo $container_class; ?>">
                 <div class="content">
 					<?php the_content(); ?>
                 </div>

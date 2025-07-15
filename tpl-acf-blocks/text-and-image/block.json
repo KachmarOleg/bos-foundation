@@ -1,0 +1,23 @@
+{
+  "name": "acf/text-and-image",
+  "title": "Text and Image",
+  "description": "A custom block with text and image",
+  "category": "formatting",
+  "keywords": [
+    "text",
+    "image",
+    "columns"
+  ],
+  "icon": "sort",
+  "apiVersion": 2,
+  "acf": {
+    "renderTemplate": "./text-and-image.php",
+    "mode": "edit"
+  },
+  "attributes": {
+    "previewImage": {
+      "type": "string",
+      "default": "preview.png"
+    }
+  }
+}

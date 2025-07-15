@@ -1,0 +1,27 @@
+.block__txt_img__text {
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (max-width: 1024px) {
+  .block__txt_img__text {
+    margin-bottom: 48px;
+  }
+}
+.block__txt_img__text h2 {
+  margin-bottom: 40px !important;
+  color: #132463;
+}
+.block__txt_img__image {
+  grid-row: 1;
+}
+.block__txt_img__image figure {
+  min-height: 580px;
+  height: 100%;
+}
+.block__txt_img__image figure img {
+  border-radius: 30px;
+}
+
+/*# sourceMappingURL=text-and-image.css.map */

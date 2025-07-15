@@ -1,0 +1,30 @@
+@import '../../style/import/import';
+
+.block__txt_img {
+  &__text {
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include rwd-max(1024) {
+      margin-bottom: 48px;
+    }
+
+    h2 {
+      margin-bottom: 40px !important;
+      color: $blue-primary;
+    }
+  }
+
+  &__image {
+    grid-row: 1;
+    figure {
+      min-height: 580px;
+      height: 100%;
+
+      img {
+        border-radius: 30px;
+      }
+    }
+  }
+}

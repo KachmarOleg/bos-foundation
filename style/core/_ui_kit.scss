@@ -365,6 +365,16 @@ $columns: 12;
   }
 }
 
+@for $start from 1 through $columns {
+  @for $span from 1 through ($columns - $start + 1) {
+    .sm_start_#{$start}_cols_#{$span} {
+      @include rwd-range(1280, 1025) {
+        grid-column: #{$start} / span #{$span} !important;
+      }
+    }
+  }
+}
+
 *:not(.wpcf7) input {
   &[type='text'],
   &[type='email'],
