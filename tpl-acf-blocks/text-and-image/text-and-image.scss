@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
     @include rwd-max(1024) {
       margin-bottom: 48px;
     }
@@ -14,16 +15,47 @@
       margin-bottom: 40px !important;
       color: $blue-primary;
     }
+
+    .button {
+      padding: 18px 24px;
+      margin-top: 40px;
+      background: $blue-primary;
+      color: #ffffff;
+      @include hover {
+        background: $blue-dark;
+      }
+    }
   }
 
   &__image {
     grid-row: 1;
     figure {
+      position: relative;
       min-height: 580px;
       height: 100%;
 
       img {
         border-radius: 30px;
+
+        &.image_1 {
+          border-radius: 30px;
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 60%;
+          aspect-ratio: 1;
+          height: auto;
+        }
+
+        &.image_2 {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          border-radius: 30px;
+          width: 60%;
+          aspect-ratio: 1;
+          height: auto;
+        }
       }
     }
   }
