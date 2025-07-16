@@ -6,7 +6,7 @@
   transition: all 0.3s ease;
   display: inline-block;
   vertical-align: middle;
-  font: 500 18px/24px $ff;
+  font: 500 14px/24px $ff;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $blue-dark;
@@ -20,7 +20,22 @@
     padding: 10px 22px;
   }
   &.is_full {width: 100%}
-  @include hover {background-color: $orange-warm}
+  @include hover {
+    background-color: #ea9b4e;
+    box-shadow: 0 1px 12px 1px rgba(236, 167, 100, 0.5);
+    color: rgba(#ffffff, 0.85);
+  }
+
+  &.secondary {
+    background: $blue-primary;
+    color: #ffffff;
+    border: 2px solid $blue-primary;
+    @include hover {
+      background: #fff;
+      color: $blue-primary;
+      box-shadow: none;
+    }
+  }
 }
 
 .wp-block-button {

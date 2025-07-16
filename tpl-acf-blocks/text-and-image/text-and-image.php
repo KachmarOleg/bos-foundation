@@ -24,9 +24,13 @@ $button = $text_and_image['text_content']['btn'];
     <div class="container">
         <div class="container_grid<?php echo esc_attr($position); ?>">
             <div class="<?php echo esc_attr($text_classes); ?>">
-				<?php echo wp_kses_post($text_and_image['text_content']['text']); ?>
+                <div class="last_no_spacing">
+	                <?php echo wp_kses_post($text_and_image['text_content']['text']); ?>
+                </div>
 
-<!--                <a href="--><?php //echo esc_url( $button['url'] ); ?><!--" class="button" target="--><?php //echo $button['target'] ? : '_self'; ?><!--">--><?php //echo esc_html( $button['title'] ); ?><!--</a>-->
+                <?php if ( $button ) : ?>
+                    <a href="<?php echo esc_url( $button['url'] ); ?>" class="button secondary" target="<?php echo $button['target'] ? : '_self'; ?>"><?php echo esc_html( $button['title'] ); ?></a>
+                <?php endif; ?>
             </div>
 
             <div class="<?php echo esc_attr($image_classes); ?>">
