@@ -1,0 +1,45 @@
+@import '../../style/import/import';
+
+.block__steps {
+  background: $beige-light;
+  padding: 120px 0;
+  margin-bottom: 120px;
+  @include rwd-max(1024) {
+    padding: 60px 0;
+    margin-bottom: 80px;
+  }
+
+  .container {
+    h2 {
+      text-align: center;
+      margin-bottom: 60px;
+      color: $blue-primary;
+    }
+  }
+
+  .step_items {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 25px;
+    @include rwd-max(1024) {
+      flex-wrap: wrap;
+      row-gap: 32px;
+    }
+
+    .step_item {
+      @include rwd-range(1024, 768) {
+        min-width: 40%;
+        flex: 1;
+      }
+      
+      &__title {
+        margin-bottom: 16px;
+        color: $brown-medium;
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

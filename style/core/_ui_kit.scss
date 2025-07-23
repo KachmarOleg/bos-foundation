@@ -371,6 +371,18 @@ hr {
   }
 }
 
+.is_10 {
+  @include rwd-min(768) {
+    grid-column: 2 / span 10;
+  }
+}
+
+.is_8 {
+  @include rwd-min(768) {
+    grid-column: 3 / span 8;
+  }
+}
+
 $columns: 12;
 @for $start from 1 through $columns {
   @for $span from 1 through ($columns - $start + 1) {

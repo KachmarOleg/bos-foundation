@@ -22,8 +22,13 @@
 }
 .block__txt_img__image figure {
   position: relative;
-  min-height: 580px;
   height: 100%;
+  min-height: 70vh;
+}
+@media screen and (min-width: 1024px) {
+  .block__txt_img__image figure {
+    min-height: 580px;
+  }
 }
 .block__txt_img__image figure img {
   border-radius: 30px;

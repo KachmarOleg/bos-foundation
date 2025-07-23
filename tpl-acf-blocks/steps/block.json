@@ -1,17 +1,18 @@
 {
-  "name": "acf/text-and-image",
-  "title": "Text and Image",
-  "description": "A custom block with text and image",
+  "name": "acf/steps",
+  "title": "Steps",
+  "description": "A custom block with 4 columns for text",
   "category": "formatting",
   "keywords": [
     "text",
-    "image",
+    "bullets",
+    "steps",
     "columns"
   ],
-  "icon": "align-right",
+  "icon": "editor-ul",
   "apiVersion": 2,
   "acf": {
-    "renderTemplate": "./text-and-image.php",
+    "renderTemplate": "./steps.php",
     "mode": "edit"
   },
   "attributes": {

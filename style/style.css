@@ -771,6 +771,18 @@ hr {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .is_10 {
+    grid-column: 2/span 10;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .is_8 {
+    grid-column: 3/span 8;
+  }
+}
+
 .start_1_cols_1 {
   grid-column: 1/span 1 !important;
 }

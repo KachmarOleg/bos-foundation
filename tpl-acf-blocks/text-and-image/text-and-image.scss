@@ -25,8 +25,11 @@
     grid-row: 1;
     figure {
       position: relative;
-      min-height: 580px;
       height: 100%;
+      min-height: 70vh;
+      @include rwd-min(1024) {
+        min-height: 580px;
+      }
 
       img {
         border-radius: 30px;
