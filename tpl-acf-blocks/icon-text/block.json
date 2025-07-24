@@ -1,0 +1,23 @@
+{
+  "name": "acf/icon-text",
+  "title": "Icon and text",
+  "description": "A custom block with a few columns with icon and text",
+  "category": "formatting",
+  "keywords": [
+    "text",
+    "icon",
+    "column"
+  ],
+  "icon": "ellipsis",
+  "apiVersion": 2,
+  "acf": {
+    "renderTemplate": "./icon-text.php",
+    "mode": "edit"
+  },
+  "attributes": {
+    "previewImage": {
+      "type": "string",
+      "default": "preview.png"
+    }
+  }
+}

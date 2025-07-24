@@ -1,0 +1,64 @@
+@import '../../style/import/import';
+
+.block__icon_text {
+  margin-bottom: 120px;
+  @include rwd-max(1024) {
+    margin-bottom: 80px;
+  }
+
+  .container {
+    h2 {
+      margin-bottom: 60px;
+      color: $blue-primary;
+      text-align: center;
+      @include rwd-max(1024) {
+        margin-bottom: 48px;
+      }
+    }
+  }
+
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 50px;
+    @include rwd-range(1024, 768) {
+      flex-wrap: wrap;
+      justify-content: center;
+      row-gap: 60px;
+    }
+    @include rwd-max(767) {
+      flex-direction: column;
+      row-gap: 60px;
+    }
+
+    .card {
+      @include rwd-range(1024, 768) {
+        width: calc(50% - 25px)
+      }
+
+      &__icon {
+        margin-bottom: 24px;
+        width: 60px;
+        height: 60px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $beige-light;
+        border-radius: 10px;
+
+        svg {
+          path {
+            fill: $blue-dark;
+          }
+        }
+      }
+
+      &__title {
+        margin-bottom: 8px;
+        font-size: 26px;
+        color: $blue-primary;
+      }
+    }
+  }
+}
