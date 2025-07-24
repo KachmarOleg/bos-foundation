@@ -121,9 +121,9 @@ input, textarea {
 }
 
 // selection
-::selection {color: $tx; background-color: $cl}
+::selection {color: #ffffff; background-color: $cl}
 
-::-moz-selection {color: $tx; background-color: $cl}
+::-moz-selection {color: #ffffff; background-color: $cl}
 
 // custom scrollbar - chrome
 html::-webkit-scrollbar {

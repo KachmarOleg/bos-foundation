@@ -30,6 +30,7 @@
     background: $blue-primary;
     color: #ffffff;
     border: 2px solid $blue-primary;
+    padding: 10px 20px;
     @include hover {
       background: #fff;
       color: $blue-primary;

@@ -1,0 +1,24 @@
+{
+  "name": "acf/cta",
+  "title": "Call to Action (CTA)",
+  "description": "A custom block with 4 columns for text",
+  "category": "formatting",
+  "keywords": [
+    "text",
+    "button",
+    "cta",
+    "call to action"
+  ],
+  "icon": "money-alt",
+  "apiVersion": 2,
+  "acf": {
+    "renderTemplate": "./cta.php",
+    "mode": "edit"
+  },
+  "attributes": {
+    "previewImage": {
+      "type": "string",
+      "default": "preview.png"
+    }
+  }
+}

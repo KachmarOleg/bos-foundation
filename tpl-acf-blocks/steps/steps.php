@@ -1,7 +1,7 @@
 <?php $steps = get_field( 'steps' ); ?>
 
 <div class="block__steps">
-    <div class="container is_10">
+    <div class="container">
         <div class="container_grid">
             <div class="is_10 sm_start_1_cols_12">
                 <h2><?php echo esc_html($steps['title']); ?></h2>

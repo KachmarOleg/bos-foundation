@@ -182,12 +182,12 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 
 ::selection {
-  color: #000000;
+  color: #ffffff;
   background-color: #132463;
 }
 
 ::-moz-selection {
-  color: #000000;
+  color: #ffffff;
   background-color: #132463;
 }
 
@@ -284,6 +284,7 @@ a[href]:focus, a[href]:focus-visible, area[href]:focus, area[href]:focus-visible
   background: #132463;
   color: #ffffff;
   border: 2px solid #132463;
+  padding: 10px 20px;
 }
 .button.secondary:active,
 .wp-block-button__link.secondary:active,
