@@ -109,7 +109,10 @@ header {
       &.current-menu-parent {
         & > a,
         & > span {
-          @include rwd-min(1025) {text-decoration: underline}
+          @include rwd-min(1025) {
+            font-weight: 500;
+            color: $brown-medium;
+          }
           @include rwd-max(1024) {color: $tx}
         }
       }
@@ -201,10 +204,12 @@ header {
 
     a {
       color: #fff;
-      @include hover {color: $tx}
+      border-bottom: 1px solid transparent;
+      @include hover {
+        border-bottom: 1px solid currentColor;
+      }
       @include rwd-min(1025) {
         color: $tx;
-        &:hover {color: $cl}
       }
       @include rwd-max(1024) {display: inline-block}
     }

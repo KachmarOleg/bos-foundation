@@ -5,7 +5,9 @@ require_once('inc/themer.php');
 
 // register menus
 register_nav_menus(array(
-    'main_menu' => 'Main menu'
+    'main_menu'   => 'Main menu',
+	'quick_links' => 'Quick Links',
+	'policies'    => 'Policies'
 ));
 
 // custom images sizes
@@ -75,4 +77,17 @@ function get_page_url( $template_name ) {
 	}
 
 	return get_bloginfo( 'url' );
+}
+
+
+/**
+ * Sanitize a phone number to be used in a tel: link
+ *
+ * @param string $phone
+ * @return string
+ */
+function sanitize_phone_for_tel( $phone ) {
+	$sanitized = preg_replace( '/[^+\d]/', '', $phone );
+
+	return $sanitized;
 }

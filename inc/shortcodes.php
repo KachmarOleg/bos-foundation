@@ -131,7 +131,8 @@ add_shortcode("button", "content_btn");
 
 // shortcode social media
 function so_me() {
-	$so_me = get_field('so_me', 'option');
+	$footer = get_field('footer', 'option');
+	$so_me = $footer['so_me'];
 	$soc = '';
 	if($so_me) {
 		$soc .= '<ul class="so_me">';

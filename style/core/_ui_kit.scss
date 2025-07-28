@@ -54,8 +54,10 @@
 
 .link {
   color: $cl;
-  box-shadow: 0 1px;
-  @include hover {box-shadow: 0 0}
+  border-bottom: 1px solid currentColor;
+  @include hover {
+    border-bottom: 1px solid transparent;
+  }
 }
 
 $headings: 4;
@@ -364,7 +366,7 @@ hr {
 }
 
 .container_grid {
-  @include rwd-min(1025) {
+  @include rwd-min(768) {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 20px;
@@ -396,7 +398,7 @@ $columns: 12;
 @for $start from 1 through $columns {
   @for $span from 1 through ($columns - $start + 1) {
     .sm_start_#{$start}_cols_#{$span} {
-      @include rwd-range(1280, 1025) {
+      @include rwd-range(1280, 767) {
         grid-column: #{$start} / span #{$span} !important;
       }
     }

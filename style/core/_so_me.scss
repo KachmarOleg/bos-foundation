@@ -1,18 +1,27 @@
 // social media + share buttons
 .shrs,
 .so_me {
-  margin: 0 -10px;
-
   li {
-    display: inline-flex;
-    vertical-align: middle;
-    margin: 0 10px;
+    &:not(:last-child) {
+      a {
+        margin-bottom: 8px;
+      }
+    }
   }
 
   a {
-    font-size: 24px;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $orange-warm;
+    font-size: 16px;
     line-height: 0.8;
-    color: $cl;
+    color: $blue-dark;
+    @include hover {
+      color: #ffffff;
+    }
   }
 }
 
