@@ -25,10 +25,12 @@
     row-gap: 32px;
   }
 }
+.block__steps .step_items .step_item {
+  flex: 1;
+}
 @media screen and (max-width: 1024px) and (min-width: 768px) {
   .block__steps .step_items .step_item {
     min-width: 40%;
-    flex: 1;
   }
 }
 .block__steps .step_items .step_item__title {

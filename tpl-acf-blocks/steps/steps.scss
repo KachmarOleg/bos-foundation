@@ -27,9 +27,9 @@
     }
 
     .step_item {
+      flex: 1;
       @include rwd-range(1024, 768) {
         min-width: 40%;
-        flex: 1;
       }
       
       &__title {
