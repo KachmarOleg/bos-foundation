@@ -415,7 +415,7 @@ h1, .h1 {
 h2, .h2 {
   font-size: 40px;
   font-weight: 700;
-  line-height: 38px;
+  line-height: normal;
   color: #132463;
 }
 @media screen and (max-width: 767px) and (min-width: 480px) {

@@ -23,10 +23,12 @@
 .block__txt_img__image figure {
   position: relative;
   height: 100%;
+}
+.block__txt_img__image figure.two_images {
   min-height: 70vh;
 }
 @media screen and (min-width: 1024px) {
-  .block__txt_img__image figure {
+  .block__txt_img__image figure.two_images {
     min-height: 580px;
   }
 }

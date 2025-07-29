@@ -26,9 +26,15 @@
     figure {
       position: relative;
       height: 100%;
-      min-height: 70vh;
-      @include rwd-min(1024) {
-        min-height: 580px;
+      &.one_image {
+        //max-height: 400px;
+      }
+
+      &.two_images {
+        min-height: 70vh;
+        @include rwd-min(1024) {
+          min-height: 580px;
+        }
       }
 
       img {

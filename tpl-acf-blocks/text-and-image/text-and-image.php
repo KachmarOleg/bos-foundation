@@ -37,7 +37,7 @@ $button = $text_and_image['text_content']['btn'];
 				<?php if ( $image_1 ) :
 					$img_id_1 = $image_1['id'];
 					?>
-                    <figure>
+                    <figure class="<?php echo ($image_2 && $img_amount === 'two') ? 'two_images' : 'one_image'; ?>">
 						<?php echo wp_get_attachment_image( $img_id_1, 'full', false, array(
 							'alt' => get_alt( $img_id_1 ),
 							'class' => esc_attr($image_1_class)

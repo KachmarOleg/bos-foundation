@@ -50,6 +50,9 @@
   background: #F3E2CE;
   border-radius: 10px;
 }
+.block__icon_text .cards .card__icon svg {
+  height: 100%;
+}
 .block__icon_text .cards .card__icon svg path {
   fill: #1F2A44;
 }
