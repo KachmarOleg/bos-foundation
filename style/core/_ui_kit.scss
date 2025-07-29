@@ -87,6 +87,7 @@ h2, .h2 {
   font-size: 40px;
   font-weight: 700;
   line-height: 38px;
+  color: $blue-primary;
   @include rwd-range(767, 480) {
     font-size: 32px;
   }
