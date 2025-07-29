@@ -1,5 +1,13 @@
 // swiper controls
-.swiper-slide {box-sizing: border-box}
+.swiper-slide {
+  box-sizing: border-box;
+  aspect-ratio: 3 / 2;
+  max-height: 75vh;
+
+  img {
+    border-radius: 20px;
+  }
+}
 
 .sw_controls {
   display: flex;

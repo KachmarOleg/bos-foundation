@@ -51,5 +51,8 @@
   display: flex;
   width: 100%;
 }
+.block__custom_gallery_item a img {
+  border-radius: 20px;
+}
 
 /*# sourceMappingURL=block-gallery.css.map */

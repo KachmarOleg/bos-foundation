@@ -1,5 +1,10 @@
 .swiper-slide {
   box-sizing: border-box;
+  aspect-ratio: 3/2;
+  max-height: 75vh;
+}
+.swiper-slide img {
+  border-radius: 20px;
 }
 
 .sw_controls {
