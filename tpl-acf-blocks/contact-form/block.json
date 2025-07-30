@@ -1,0 +1,25 @@
+{
+  "name": "acf/contact-form",
+  "title": "Contact form",
+  "description": "Block with contact form and text above it",
+  "category": "formatting",
+  "keywords": [
+    "contact",
+    "form",
+    "join",
+    "email",
+    "sand"
+  ],
+  "icon": "email-alt",
+  "apiVersion": 2,
+  "acf": {
+    "renderTemplate": "./contact-form.php",
+    "mode": "edit"
+  },
+  "attributes": {
+    "previewImage": {
+      "type": "string",
+      "default": "preview.png"
+    }
+  }
+}

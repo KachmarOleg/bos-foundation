@@ -387,6 +387,12 @@ hr {
   }
 }
 
+.is_6 {
+  @include rwd-min(768) {
+    grid-column: 4 / span 6;
+  }
+}
+
 $columns: 12;
 @for $start from 1 through $columns {
   @for $span from 1 through ($columns - $start + 1) {

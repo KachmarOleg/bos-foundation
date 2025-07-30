@@ -1,0 +1,32 @@
+@import '../../style/import/import';
+@import '../../style/libs/cf7';
+
+.block__contact_form {
+  margin-bottom: 120px;
+  @include rwd-max(1024) {
+    margin-bottom: 80px;
+  }
+
+  fieldset {
+    display: none;
+  }
+
+  .content {
+    margin-bottom: 48px;
+  }
+
+  p {
+    @include rwd-min(480) {
+      font-size: 24px;
+    }
+  }
+
+  .double_input {
+    @include rwd-min(480) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      column-gap: 20px;
+    }
+  }
+}

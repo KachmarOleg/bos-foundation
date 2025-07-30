@@ -785,6 +785,12 @@ hr {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .is_6 {
+    grid-column: 4/span 6;
+  }
+}
+
 .start_1_cols_1 {
   grid-column: 1/span 1 !important;
 }
@@ -2156,7 +2162,7 @@ header:before {
 .top_panel__secondary {
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 80px !important;
   position: relative;
 }
 .top_panel__primary figure,

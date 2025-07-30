@@ -70,7 +70,7 @@ div.wpcf7 {
     bottom: 0;
     font: 400 16px/40px $ff;
     color: $form-error;
-    padding: 0 15px;
+    padding: 7px 20px;
     border-radius: 0;
     background-color: #fff;
     border: 1px solid $form-error;
@@ -95,7 +95,7 @@ div.wpcf7 {
       height: 40px;
       font: 400 16px $ff;
       color: $tx;
-      padding: 0 15px;
+      padding: 26px 20px;
       border: 1px solid $tx;
       background-color: #fff;
       @include placeholder {color: $tx; opacity: 1}
