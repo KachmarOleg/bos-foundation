@@ -25,9 +25,6 @@ require_once( 'admin-area/admin-area.php' );
 // custom shortcodes
 require_once( 'shortcodes.php' );
 
-// custom posts duplicator
-require_once( 'plugins/duplicator.php' );
-
 // ACF settings
 require_once( 'acf.php' );
 
